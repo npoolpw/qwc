@@ -1,8 +1,8 @@
-var api = "http://apihost.com:port";
+var api = "http://qwc.npool.pw:8116";
 
-var poolHost = "apihost.com";
+var poolHost = "qwc.npool.pw";
 
-var blockExplorer = "http://blockexplorer.pw/coin";
+var blockExplorer = "http://blockexplorer.pw/qwc";
 
 var cryptonatorWidget = ["BTC-USD", "XMR-USD"];
 
@@ -15,5 +15,8 @@ var transactionExplorer = "http://blockexplorer.pw/{symbol}/?hash={id}#blockchai
 var themeCss = "themes/default-theme.css";
 
 var networkStat = [
-        ["coin.apihost.com", "http://coin.apihost.com:port"],
+        ["qwertycoin.site", "https://qwertycoin.site:8119"],
+        ["qwc.cnotepool.info", "http://qwc.cnotepool.info:8117"],
+        ["qwerty.poolminer.work", "http://qwerty.poolminer.work:8117"],
+        ["npool.pw/qwc", "http://qwc.npool.pw:8116"]
 ];
