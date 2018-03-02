@@ -16,7 +16,7 @@ var themeCss = "themes/default-theme.css";
 
 var networkStat = [
         ["qwertycoin.site", "https://qwertycoin.site:8119"],
-        ["qwc.cnotepool.info", "http://qwc.cnotepool.info:8117"],
+        ["cryptoknight.cc/qwerty", "http://78.46.85.142:6559"],
         ["qwerty.poolminer.work", "http://qwerty.poolminer.work:8117"],
         ["npool.pw/qwc", "http://qwc.npool.pw:8116"]
 ];
