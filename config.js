@@ -4,7 +4,7 @@ var poolHost = "qwc.npool.pw";
 
 var blockExplorer = "http://blockexplorer.pw/qwc";
 
-var cryptonatorWidget = ["BTC-USD", "XMR-USD"];
+var cryptonatorWidget = ["BTC-USD", "QWC-BTC"];
 
 var easyminerDownload = "https://github.com/zone117x/cryptonote-easy-miner/releases/";
 
