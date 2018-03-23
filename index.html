@@ -4,16 +4,16 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="logo.png" rel="shortcut icon" type="image/x-icon" />
     <title>Mining Pool</title>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.4.0/jquery.timeago.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.4.0/jquery.timeago.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="//fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
 
@@ -255,6 +255,10 @@
     function updateIndex(){
         //updateText('coinName', lastStats.config.coin);
         var title = lastStats.config.coin;
+        if(title.indexOf('-')>-1)
+        {
+            title = title.substr(0,title.indexOf('-'));
+        }
         $("title").text(title.charAt(0).toUpperCase() + title.slice(1) + " Mining Pool");
         updateText('poolVersion', lastStats.config.version);
     }
@@ -326,6 +330,13 @@
 
                 <li><a class="hot_link" data-page="network.html" href="#network">
                     <i class="fa fa-chain"></i> Network
+                </a></li>
+
+                <li><a target="_blank" href="/">
+                    <i class="fa fa-list-ul"></i> Other Coin
+                </a></li>
+		<li><a target="_blank" href="https://discord.gg/hysP3YK">
+                    <i class="fa fa-comment"></i> Discord
                 </a></li>
 
             </ul>
